@@ -19,7 +19,7 @@ def get_token(api_key):
 st.title("PMGSY Scheme Classifier")
 
 with st.form("input_form"):
-    st.subheader("Enter Project Details:")
+    st.subheader("Enter the Details:")
 
     state = st.selectbox("State Name", [
     "Andhra Pradesh",
@@ -113,4 +113,5 @@ if submitted:
             st.error(f"❌ Failed: {response.text}")
 
     except Exception as e:
+
         st.error(f"🚨 Error: {e}")
